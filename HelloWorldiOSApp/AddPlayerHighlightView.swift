@@ -15,7 +15,7 @@ struct AddPlayerHighlightView: View {
         startPoint: .top, endPoint: .bottom)
     var body: some View {
         ZStack {
-            backgroundGradient
+            backgroundGradient.edgesIgnoringSafeArea(.all)
             VStack(spacing: 10) {
                 Spacer()
                 Text("Add a Highlight").font(.largeTitle)
