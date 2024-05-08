@@ -14,7 +14,10 @@ struct AddPlayerHighlightView: View {
         colors: [Color.red, Color.blue],
         startPoint: .top, endPoint: .bottom)
     var body: some View {
+        ZStack {
+            backgroundGradient
             VStack(spacing: 10) {
+                Spacer()
                 Text("Add a Highlight").font(.largeTitle)
                 Form {
                     TextField("Enter Player Name", text: $playerName)
@@ -24,9 +27,10 @@ struct AddPlayerHighlightView: View {
                     }) {
                         Text("Add Player Highlight")
                     }
-                }
+                }.scrollContentBackground(.hidden)
             }
         
+        }
     }
 }
 
