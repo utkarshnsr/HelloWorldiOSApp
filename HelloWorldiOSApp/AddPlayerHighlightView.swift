@@ -24,6 +24,7 @@ struct AddPlayerHighlightView: View {
                     TextField("Enter Highlight Link", text: $highlightLink)
                     Button(action: {
                         //action logic
+                     
                     }) {
                         Text("Add Player Highlight")
                     }
