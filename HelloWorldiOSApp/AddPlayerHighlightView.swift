@@ -8,8 +8,25 @@
 import SwiftUI
 
 struct AddPlayerHighlightView: View {
+    @State private var playerName = ""
+    @State private var highlightLink = ""
+    let backgroundGradient = LinearGradient(
+        colors: [Color.red, Color.blue],
+        startPoint: .top, endPoint: .bottom)
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack(spacing: 10) {
+                Text("Add a Highlight").font(.largeTitle)
+                Form {
+                    TextField("Enter Player Name", text: $playerName)
+                    TextField("Enter Highlight Link", text: $highlightLink)
+                    Button(action: {
+                        //action logic
+                    }) {
+                        Text("Add Player Highlight")
+                    }
+                }
+            }
+        
     }
 }
 

@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(.all)
+        
+        TabView {
+            AddPlayerHighlightView()
+                .tabItem {
+                    Label("Add a Highlight", systemImage: "plus.app")
+                }
+            MyPlayersView()
+                .tabItem {
+                    Label("My Players", systemImage: "person.3")
+                }
         }
+        
     }
 }
 

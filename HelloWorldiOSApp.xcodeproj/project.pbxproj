@@ -14,6 +14,8 @@
 		21217E3C2BE9816E0007C6CB /* HelloWorldiOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21217E3B2BE9816E0007C6CB /* HelloWorldiOSAppTests.swift */; };
 		21217E462BE9816E0007C6CB /* HelloWorldiOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21217E452BE9816E0007C6CB /* HelloWorldiOSAppUITests.swift */; };
 		21217E482BE9816E0007C6CB /* HelloWorldiOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21217E472BE9816E0007C6CB /* HelloWorldiOSAppUITestsLaunchTests.swift */; };
+		2129B5FE2BEBD4B90019A82F /* AddPlayerHighlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129B5FD2BEBD4B90019A82F /* AddPlayerHighlightView.swift */; };
+		2129B6002BEBD5050019A82F /* MyPlayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2129B5FF2BEBD5050019A82F /* MyPlayersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		21217E412BE9816E0007C6CB /* HelloWorldiOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldiOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21217E452BE9816E0007C6CB /* HelloWorldiOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldiOSAppUITests.swift; sourceTree = "<group>"; };
 		21217E472BE9816E0007C6CB /* HelloWorldiOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldiOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2129B5FD2BEBD4B90019A82F /* AddPlayerHighlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerHighlightView.swift; sourceTree = "<group>"; };
+		2129B5FF2BEBD5050019A82F /* MyPlayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				21217E2A2BE9816D0007C6CB /* HelloWorldiOSAppApp.swift */,
 				21217E2C2BE9816D0007C6CB /* ContentView.swift */,
+				2129B5FF2BEBD5050019A82F /* MyPlayersView.swift */,
+				2129B5FD2BEBD4B90019A82F /* AddPlayerHighlightView.swift */,
 				21217E2E2BE9816E0007C6CB /* Assets.xcassets */,
 				21217E302BE9816E0007C6CB /* Preview Content */,
 			);
@@ -257,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2129B5FE2BEBD4B90019A82F /* AddPlayerHighlightView.swift in Sources */,
 				21217E2D2BE9816D0007C6CB /* ContentView.swift in Sources */,
 				21217E2B2BE9816D0007C6CB /* HelloWorldiOSAppApp.swift in Sources */,
+				2129B6002BEBD5050019A82F /* MyPlayersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

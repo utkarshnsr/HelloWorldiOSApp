@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct MyPlayersView: View {
+    let backgroundGradient = LinearGradient(
+            colors: [Color.red, Color.blue],
+            startPoint: .top, endPoint: .bottom)
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            backgroundGradient
+            VStack {
+                Text("My Players").font(.largeTitle)
+            }
+        }
     }
 }
 
